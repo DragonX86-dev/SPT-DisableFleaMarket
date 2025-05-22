@@ -1,6 +1,6 @@
 {
-    "name": "DisableFleaMarket",
-    "version": "1.2.0",
+    "name": "SPT-DisableFleaMarket",
+    "version": "1.0.0",
     "sptVersion": "~3.11",
     "loadBefore": [],
     "loadAfter": [],

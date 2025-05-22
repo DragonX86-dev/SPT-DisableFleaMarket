@@ -9,7 +9,7 @@
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>SPT_DisableFleaMarket</RootNamespace>
-        <AssemblyName>DragonX86-DisableFleaMarket</AssemblyName>
+        <AssemblyName>SPT-DisableFleaMarket</AssemblyName>
         <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
