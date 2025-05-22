@@ -798,8 +798,11 @@ $RECYCLE.BIN/
 # Windows Installer files from build outputs
 
 # JetBrains Rider
+/SPT-DisableFleaMarket/.idea/
 
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
+
+
 
 # End of https://www.toptal.com/developers/gitignore/api/unity,csharp,rider,visualstudio,visualstudiocode,windows,linux,macos
