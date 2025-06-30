@@ -313,28 +313,35 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         this.fluentAssortCreator
             .createSingleAssortItem(ItemTpl.KEY_BELUGA_RESTAURANT_DIRECTOR)
             .addStackCount(99)
-            .addBarterCost(ItemTpl.BARTER_GAS_ANALYZER, 2)
+            .addBarterCost(ItemTpl.BARTER_BROKEN_GPHONE_SMARTPHONE, 1)
+            .addBarterCost(ItemTpl.BARTER_NIXXOR_LENS, 1)
             .addLoyaltyLevel(2)
             .export(tables.traders[Traders.THERAPIST]);
 
-        // TerraGroup meeting room key
+        // Add TerraGroup meeting room key to therapist
         this.fluentAssortCreator
             .createSingleAssortItem(ItemTpl.KEY_TERRAGROUP_MEETING_ROOM)
             .addStackCount(99)
-            .addBarterCost(ItemTpl.BARTER_GAS_ANALYZER, 2)
+            .addBarterCost(ItemTpl.INFO_SECURE_FLASH_DRIVE, 1)
             .addLoyaltyLevel(2)
             .export(tables.traders[Traders.THERAPIST]);
 
-        // X-ray room key
+        // Add X-ray room key to therapist
+        this.fluentAssortCreator
+            .createSingleAssortItem(ItemTpl.KEY_XRAY_ROOM)
+            .addStackCount(99)
+            .addBarterCost(ItemTpl.BARTER_GAS_ANALYZER,1)
+            .addBarterCost(ItemTpl.BARTER_GEIGERMULLER_COUNTER,3)
+            .addLoyaltyLevel(1)
+            .export(tables.traders[Traders.THERAPIST]);
 
-        // Mysterious room marked key
-
-        // "Negotiation" room key
-
-        // Relaxation room key
-
-        // Real estate agency office room key
-
+        // Add Real estate agency office room key to therapist
+        this.fluentAssortCreator
+            .createSingleAssortItem(ItemTpl.KEY_REAL_ESTATE_AGENCY_OFFICE_ROOM)
+            .addStackCount(99)
+            .addBarterCost(ItemTpl.BARTER_CHAINLET,3)
+            .addLoyaltyLevel(2)
+            .export(tables.traders[Traders.THERAPIST]);
         //#endregion
 
         //#region The Lab quest keys
