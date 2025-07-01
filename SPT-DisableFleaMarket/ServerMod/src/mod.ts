@@ -37,6 +37,15 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         tables.globals.config.RagFair.minUserLevel = 999;
 
         //#region Customs quest keys
+        // Add Company director's room key to therapist
+        this.fluentAssortCreator
+            .createSingleAssortItem(ItemTpl.KEY_COMPANY_DIRECTORS_ROOM)
+            .addStackCount(99)
+            .addBarterCost(ItemTpl.BARTER_HORSE_FIGURINE, 2)
+            .addBarterCost(ItemTpl.BARTER_CHAINLET, 3)
+            .addLoyaltyLevel(2)
+            .export(tables.traders[Traders.THERAPIST]);
+
         // Add Dorm room 114 key to therapist
         this.fluentAssortCreator
             .createSingleAssortItem(ItemTpl.KEY_DORM_ROOM_114)
@@ -74,6 +83,14 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         //#endregion
 
         //#region Interchange quest keys
+        // Add EMERCOM medical unit key to therapist
+        this.fluentAssortCreator
+            .createSingleAssortItem(ItemTpl.KEY_EMERCOM_MEDICAL_UNIT)
+            .addStackCount(99)
+            .addBarterCost(ItemTpl.BARTER_OPHTHALMOSCOPE, 1)
+            .addLoyaltyLevel(2)
+            .export(tables.traders[Traders.THERAPIST]);
+
         // Add OLI logistics department office key to therapist
         this.fluentAssortCreator
             .createSingleAssortItem(ItemTpl.KEY_OLI_LOGISTICS_DEPARTMENT_OFFICE)
@@ -99,11 +116,28 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             .addLoyaltyLevel(3)
             .export(tables.traders[Traders.THERAPIST]);
 
+        // Add Rogue USEC barrack key to therapist
+        this.fluentAssortCreator
+            .createSingleAssortItem(ItemTpl.KEY_ROGUE_USEC_BARRACK)
+            .addStackCount(99)
+            .addBarterCost(ItemTpl.BARTER_BOLTS, 1)
+            .addBarterCost(ItemTpl.BARTER_SCREW_NUTS, 2)
+            .addLoyaltyLevel(3)
+            .export(tables.traders[Traders.THERAPIST]);
+
+        // Water treatment plant storage room key
+        this.fluentAssortCreator
+            .createSingleAssortItem(ItemTpl.KEY_WATER_TREATMENT_PLANT_STORAGE_ROOM)
+            .addStackCount(99)
+            .addBarterCost(ItemTpl.BARTER_WATER_FILTER, 1)
+            .addLoyaltyLevel(3)
+            .export(tables.traders[Traders.THERAPIST]);
+
         // Add Operating room key to therapist
         this.fluentAssortCreator
             .createSingleAssortItem(ItemTpl.KEY_OPERATING_ROOM)
             .addStackCount(99)
-            .addBarterCost(ItemTpl.BARTER_AQUAPEPS_WATER_PURIFICATION_TABLETS, 2)
+            .addBarterCost(ItemTpl.BARTER_MEDICAL_TOOLS, 4)
             .addBarterCost(ItemTpl.BARTER_BOTTLE_OF_HYDROGEN_PEROXIDE, 3)
             .addLoyaltyLevel(1)
             .export(tables.traders[Traders.THERAPIST]);
@@ -263,16 +297,6 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         //#endregion
 
         //#region Streets Of Tarkov quest keys
-        // Add Car dealership director's office room key to therapist
-        this.fluentAssortCreator
-            .createSingleAssortItem(ItemTpl.KEY_CAR_DEALERSHIP_DIRECTORS_OFFICE_ROOM)
-            .addStackCount(99)
-            .addBarterCost(ItemTpl.BARTER_PORTABLE_POWERBANK, 1)
-            .addBarterCost(ItemTpl.BARTER_BROKEN_GPHONE_X_SMARTPHONE, 1)
-            .addBarterCost(ItemTpl.BARTER_NIXXOR_LENS, 1)
-            .addLoyaltyLevel(4)
-            .export(tables.traders[Traders.THERAPIST]);
-
         // Add Iron gate key to therapist
         this.fluentAssortCreator
             .createSingleAssortItem(ItemTpl.KEY_IRON_GATE)
@@ -324,6 +348,22 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             .addStackCount(99)
             .addBarterCost(ItemTpl.INFO_SECURE_FLASH_DRIVE, 1)
             .addLoyaltyLevel(2)
+            .export(tables.traders[Traders.THERAPIST]);
+
+        // Add "Negotiation" room key to therapist
+        this.fluentAssortCreator
+            .createSingleAssortItem(ItemTpl.KEY_NEGOTIATION_ROOM)
+            .addStackCount(99)
+            .addBarterCost(ItemTpl.BARTER_ELECTRONIC_COMPONENTS, 1)
+            .addLoyaltyLevel(3)
+            .export(tables.traders[Traders.THERAPIST]);
+
+        // Relaxation room key
+        this.fluentAssortCreator
+            .createSingleAssortItem(ItemTpl.KEY_RELAXATION_ROOM)
+            .addStackCount(99)
+            .addBarterCost(ItemTpl.DRINK_BOTTLE_OF_DAN_JACKIEL_WHISKEY, 1)
+            .addLoyaltyLevel(3)
             .export(tables.traders[Traders.THERAPIST]);
 
         // Add X-ray room key to therapist
